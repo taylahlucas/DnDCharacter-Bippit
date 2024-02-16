@@ -15,7 +15,7 @@
         "assetBundlePatterns": ["**/*"],
         "ios": {
             "supportsTablet": true,
-						"bundleIdentifier": "com.taylahlucas.bippit"
+						"bundleIdentifier": "com.example.characterful"
         },
         "android": {
             "adaptiveIcon": {
