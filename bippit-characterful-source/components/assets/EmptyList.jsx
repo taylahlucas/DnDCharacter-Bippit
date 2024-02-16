@@ -1,0 +1,103 @@
+import * as React from "react"
+import Svg, { Rect, Circle, Path } from "react-native-svg"
+import { forwardRef } from "react"
+const SvgComponent = (props, ref) => (
+    <Svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={212}
+        height={158}
+        fill="none"
+        ref={ref}
+        {...props}
+    >
+        <Rect width={176} height={44.608} fill="#a8a29e" rx={10.219} />
+        <Circle
+            cx={13.383}
+            cy={16.627}
+            r={6.488}
+            stroke="#1c1917"
+            strokeWidth={0.811}
+        />
+        <Rect
+            width={108.682}
+            height={9.733}
+            x={26.765}
+            y={11.355}
+            fill="#57534e"
+            rx={4.866}
+        />
+        <Rect
+            width={60.018}
+            height={6.488}
+            x={26.765}
+            y={27.576}
+            fill="#57534e"
+            rx={3.244}
+        />
+        <Rect
+            width={176}
+            height={44.608}
+            x={36}
+            y={56.608}
+            fill="#a8a29e"
+            rx={10.219}
+        />
+        <Circle cx={49.383} cy={73.235} r={6.894} fill="#1c1917" />
+        <Path
+            stroke="#fff"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={1.5}
+            d="m45 73.5 2.663 2.5L53 71"
+        />
+        <Rect
+            width={108.682}
+            height={9.733}
+            x={62.765}
+            y={67.963}
+            fill="#57534e"
+            rx={4.866}
+        />
+        <Rect
+            width={60.018}
+            height={6.488}
+            x={62.765}
+            y={84.184}
+            fill="#57534e"
+            rx={3.244}
+        />
+        <Rect
+            width={176}
+            height={44.608}
+            x={7}
+            y={113.217}
+            fill="#a8a29e"
+            rx={10.219}
+        />
+        <Circle
+            cx={20.383}
+            cy={129.843}
+            r={6.488}
+            stroke="#1c1917"
+            strokeWidth={0.811}
+        />
+        <Rect
+            width={108.682}
+            height={9.733}
+            x={33.765}
+            y={124.571}
+            fill="#57534e"
+            rx={4.866}
+        />
+        <Rect
+            width={60.018}
+            height={6.488}
+            x={33.765}
+            y={140.793}
+            fill="#57534e"
+            rx={3.244}
+        />
+    </Svg>
+)
+const EmptyList = forwardRef(SvgComponent)
+export default EmptyList
