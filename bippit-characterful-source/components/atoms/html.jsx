@@ -12,6 +12,16 @@ export const Paragraph = Platform.select({
     ),
 })
 
+const boldSpanClassName = "font-bold text-base text-white"
+export const BoldSpan = Platform.select({
+    native: ({ className, ...props }) => (
+        <Text className={cx(boldSpanClassName, className)} {...props} />
+    ),
+    web: ({ className, ...props }) => (
+        <span className={cx(boldSpanClassName, className)} {...props} />
+    ),
+})
+
 const spanClassName = "font-body text-base text-white"
 export const Span = Platform.select({
     native: ({ className, ...props }) => (
