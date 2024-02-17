@@ -59,7 +59,7 @@ export default function CharacterBuilder() {
 		if (Object.keys(characterForm.background).length === 0) {
 			throw TypeError("Background must contain a background")
 		}
-
+		
 		characterStore.upsertCharacter(
 			defaultCharacter({
 				name: name.current,

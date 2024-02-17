@@ -61,15 +61,31 @@ export default function ClassSelection() {
 									{charClass.proficiencies.map(prof => (
 										<Span key={prof.index}>{prof.name}</Span>
 									))}
-								</View>
-								<View className="w-6/12 gap-2">
-									<BoldSpan className="mb-4">Subclasses: </BoldSpan>
+									<BoldSpan className="mt-4">Subclasses: </BoldSpan>
 									{charClass.subclasses.map(subClass => (
 										<Span key={subClass.index}>{subClass.name}</Span>
 									))}
+
 									<BoldSpan className="mt-4">Starting Equipment: </BoldSpan>
 									{charClass.starting_equipment.map(item => (
 										<Span key={item.equipment.index}>{item.equipment.name}</Span>
+									))}
+
+									<BoldSpan className="mt-4">Starting Equipment: </BoldSpan>
+									{charClass.starting_equipment.map(item => (
+										<Span key={item.equipment.index}>{item.equipment.name}</Span>
+									))}
+								</View>
+
+								<View className="w-6/12 gap-2">
+									<BoldSpan className="mb-4">Proficiency Choices: </BoldSpan>
+									{charClass.proficiency_choices.map((prof, index) => (
+										<View key={index}>
+											<Span className="mb-4">{prof.desc}</Span>
+											{prof.from.options.map(option => (
+												<Span key={option.item?.index}>{option.item?.name}</Span>
+											))}
+										</View>
 									))}
 								</View>
 							</View>

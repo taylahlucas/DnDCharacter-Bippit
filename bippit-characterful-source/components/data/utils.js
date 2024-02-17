@@ -1,3 +1,5 @@
+import { initialCharacter } from "./CharacterStore"
+
 export function removeFromSet(state, key) {
     const filtered = { ...state }
     delete filtered[key]
@@ -11,7 +13,11 @@ export function removeFromArray(field, list, key) {
 export function replaceByField(field, state, entry) {
     return {
         ...state,
-        [entry[field]]: entry,
+		characterForm: initialCharacter(),
+		characters: {
+			...state.characters,
+			[entry[field]]: entry
+		}
     }
 }
 

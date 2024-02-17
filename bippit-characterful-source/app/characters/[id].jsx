@@ -47,8 +47,6 @@ export default function CharacterView() {
         character.background,
     )
 
-    console.log(characterAlignment)
-
     return (
         <>
             <Tabs.Screen options={{ headerShown: false }} />

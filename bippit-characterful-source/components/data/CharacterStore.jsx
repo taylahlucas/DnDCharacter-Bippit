@@ -11,11 +11,7 @@ const SET_NEW_CHARACTER_FORM = "set_new_character_form"
 const UPSERT_CHARACTER = "upsert_character"
 const DELETE_CHARACTER = "delete_character"
 
-function randomId() {
-	return String(Math.floor(Math.random() * 1234567))
-}
-
-const initialCharacter = (fields) => ({
+export const initialCharacter = (fields) => ({
 	name: '',
 	description: [],
 	class: {
@@ -107,7 +103,7 @@ export const CharacterStoreProvider = ({ children }) => {
 			upsertCharacter,
 			deleteCharacter,
 		}),
-		[state.character, state.characterForm, setNewCharacterForm, upsertCharacter, deleteCharacter],
+		[state.characters, state.characterForm, setNewCharacterForm, upsertCharacter, deleteCharacter],
 	)
 
 	return (
